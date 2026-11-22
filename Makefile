@@ -12,4 +12,6 @@ central: $(OBJ)
 
 clean:
 	rm -f *.o central
+
+	
 	

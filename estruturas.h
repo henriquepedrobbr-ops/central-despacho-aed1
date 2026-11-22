@@ -1,9 +1,6 @@
 #ifndef ESTRUTURAS_H
 #define ESTRUTURAS_H
 
-// =========================================================
-// ENUMS PARA PADRONIZAÇÃO DE VALORES
-// =========================================================
 
 typedef enum {
     INST_RESIDENCIAL = 1,
@@ -47,14 +44,10 @@ typedef enum {
     STATUS_CHM_CANCELADO
 } StatusChamado;
 
-// =========================================================
 // DECLARAÇÃO PRÉVIA (FORWARD DECLARATION)
-// =========================================================
 typedef struct chamado Chamado;
 
-// =========================================================
 // ESTRUTURAS DE DADOS (ENTIDADES)
-// =========================================================
 
 typedef struct {
     int uc;
@@ -67,7 +60,7 @@ typedef struct equipe {
     char nome[50];
     TipoEquipe tipo;
     StatusEquipe status;
-    Chamado *chamado_em_atendimento; // Ponteiro para o chamado (NULL se disponivel)
+    Chamado *chamado_em_atendimento; 
 } Equipe;
 
 struct chamado {
